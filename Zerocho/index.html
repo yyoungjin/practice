@@ -753,6 +753,99 @@
                 #main-newstand footer {
                     border-top: 1px solid var(--color_border_in);
                     padding: 10px 0 11px;
+                    font-size: 1.3rem;
+                    line-height: 35px;
+                    font-weight: 600;
+                    color: #606060;
+                    color: var(--color_caption2);
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                }
+                #main-newstand footer .list, #main-newstand footer .grid {
+                    position: absolute;
+                    border: none;
+                    cursor: pointer;
+                    top: 0;
+                    background-color: transparent;
+                }
+                #main-newstand footer .list {
+                    right: 49px;
+                    padding: 18px 9px 18px 20px;
+                }
+                #main-newstand footer .list::before {
+                    content: '';
+                    display: inline-block;
+                    background-image: url(./sp_main.png);
+                    background-size: 422px 405px;
+                    background-position: -107px -368px;
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                }
+                #main-newstand footer .list:hover::before {
+                    background-position: -86px -368px;
+                }
+                #main-newstand footer .grid {
+                    right: 0;
+                    padding: 18px 20px 18px 9px;
+                }
+                #main-newstand footer .grid::before {
+                    content: '';
+                    display: inline-block;
+                    background-image: url(./sp_main.png);
+                    background-size: 422px 405px;
+                    background-position: -359px -368px;
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                }
+                
+                #main-newstand footer .next, #main-newstand footer .prev {
+                    background: none;
+                    border: none;
+                    content: '';
+                    width: 36px;
+                    height: 36px;
+                    border: 1px solid #dadcdf;
+                    border: 1px solid var(--color_button_border);
+                    background-color: #fff;
+                    background-color: var(--color_button1_bg);
+                    position: relative;
+                    display: inline-block;
+                    box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+                    border-radius: 50%;
+                    vertical-align: top;
+                    cursor: pointer;
+                }
+                #main-newstand footer .prev::before {
+                    transform: rotate(180deg);
+                }
+                #main-newstand footer .next::before, #main-newstand footer .prev::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.8d370390.png);
+                    background-size: 422px 405px;
+                    background-position: -412px -26px;
+                    background-repeat: no-repeat;
+                    width: 10px;
+                    height: 12px;
+                    margin: auto;
+                }
+                #main-newstand footer .text {
+                    padding: 0 16px;
+                    width: 156px;
+                }
+                #main-newstand footer .news {
+                    color: var(--color_news);
+                }
+                #main-newstand footer .total {
+                    color: rgba(96,96,96,.5);
                 }
             </style>
             <main id="main">
@@ -808,11 +901,11 @@
                             </div>
                         </div>
                         <footer>
-                            <button><span class="blind">이전</span></button>
-                            <div>언론사 더보기1페이지전체/4</div>
-                            <button><span class="blind">다음</span></button>
-                            <button><span class="blind">목록보기</span></button>
-                            <button><span class="blind">격자보기</span></button>
+                            <button class="prev"><span class="blind">이전 페이지</span></button>
+                            <div class="text"><span class="news">언론사</span>&nbsp;더보기&nbsp;1<span class="total">/4</span></div>
+                            <button class="next"><span class="blind">다음 페이지</span></button>
+                            <button class="list"><span class="blind">목록보기</span></button>
+                            <button class="grid"><span class="blind">격자보기</span></button>
                         </footer>
                     </section>
                     <section id="main-shopping"></section>
