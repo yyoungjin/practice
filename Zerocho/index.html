@@ -176,7 +176,7 @@
             </div>
             <style>
                 #search > form {
-                    display: inline-block;
+                    display: inline-flex;
                     width: 708px;
                     height: 60px;
                     border: 1px solid #03c75a;
@@ -184,7 +184,9 @@
                     text-align: left;
                 }
                 #search-svg {
-                    display: inline-block;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 68px;
                     margin-right: 12px;
                     height: 100%;
@@ -205,7 +207,15 @@
                     outline: none;
                 }
                 #search-right {
-                    display: inline-block;
+                    display: flex;
+                    flex: 1;
+                    align-items: stretch;
+                    justify-content: flex-end;
+                }
+                #search-keyboard, #search-recent, #search-button {
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
                 }
                 #search-keyboard::before {
                     content: "";
@@ -242,7 +252,7 @@
                 <form action="">
                     <a id="search-svg" href="#">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path></svg>
-                        x
+                        
                     </a>
                     <label for="search-input" class="blind">검색어 입력</label>
                     <input id="search-input" type="text" placeholder="검색어를 입력하세요." />
