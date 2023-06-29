@@ -1,0 +1,247 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github-Clonecoding</title>
+    <style>
+        html, body, main {
+            margin: 0;
+            padding: 0;
+            font-size: 10.5px;
+            line-height: 10.5px;
+            letter-spacing: -0.4px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', helvetica, "Apple SD Gothic Neo", sans-serif;
+        }
+        #wrap {
+            text-align: center;
+            background-color: darkgray;
+            height: 700px;
+        }
+        #wrap-center {
+            width: 1100px;
+            display: inline-block;
+        }
+        .nav {
+            position: relative;
+            padding-top:15px;
+            margin-right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* align-items: left; */
+            width: 1100px;
+            height: 50px;
+        }
+        .nav > ul {
+            display:flex;
+            list-style-type: none;
+            font-size: 1.2rem;
+            color:white;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .nav > ul > li{
+            margin-right: 20px;
+        }
+        .nav > div {
+            width: 450px;
+            height: 50px;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+        .nav-search {
+            height: 35px;
+            width: 160px;
+            border-radius: 5px;
+            background-color: rgb(112, 109, 109);
+            border: none;
+            color: white;
+            margin-left: 20px;
+        }
+        .nav-signin {
+            height: 20px;
+            border:none;
+            font-size:13px;
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        #nav-signup {
+            display: flex;
+            height: 25px;
+            border: 2px;
+            border-radius: 1px;
+            border-color: rgb(31, 24, 24);
+            background-color: transparent;
+            color: white;
+            margin-left: 20px;
+            align-items: center;
+            justify-content: center;
+        }   
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #main-left {
+            display: flex;
+            width: 800;
+            height: 500;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        #main-left-boldtext {
+            color:white;
+            font-size:60px; 
+            line-height: 70px;
+            text-align: left;
+            padding-left: 130px;
+        }
+        
+        #main-left-text {
+            margin-top:20px;
+            margin-bottom:70px;
+            width: 400px;
+            height: 100px;
+            color:lightgrey;
+            font-size: 17px;
+            text-align: left;
+            padding-left: 130px;
+            line-height: 26px;
+        }
+        #main-right {
+            display: block;
+            width: 550px;
+        }
+        #main-right-info {
+            padding: 22px;
+            background-color: white;
+            height: 430px;
+            width: 360px;
+            border-radius: 5px;
+            margin-right: 145px;
+        }
+        #main-right-info-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: flex-start;
+        }
+        .main-left-bold {
+            font-weight:bold;
+            color: white;
+        }
+        .main-right-label {
+            font-size:13px;
+            font-weight:bold;
+            text-align: left;
+            margin-left: 10px;
+        }
+        .main-right-input {
+            width:340px;
+            height:35px;
+            text-align: left;
+            margin-left: 10px;
+        }
+        .main-right-msg {
+            padding-top: 10px;
+            inline-size: 2px;
+            font-size : 5px;
+            text-align: left;
+            margin-left: 6px;
+            line-height: 13px;
+        }
+        #signup-box {
+            height: 50px;
+            background-color: rgb(45, 157, 45);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:10px;
+            margin-bottom:10px;
+            border-radius: 5px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #greenboxtext {
+            font-size:15px;
+            color:white;
+        }
+        #footer {
+            display: block;
+            height: 600;
+            flex-direction: row;
+            background-color: white;
+        }
+        #footer-img {
+            height: 170px;
+            width: 600px;
+            content: '';
+            background-image: url("./footer.jpeg");
+            background-repeat: no-repeat;
+            background-size: 400px 162px;
+            margin-left: 800px;
+        }
+        </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrap-center">
+            <div class="nav">
+                <ul>
+                    <li>고양이</li>
+                    <li>Why Github?</li>
+                    <li>Team</li>
+                    <li>Enterprise</li>
+                    <li>Explore</li>
+                    <li>Marketplace</li>
+                    <li>Pricing</li>
+                </ul>
+                <div id="nav-right">
+                    <div><input class="nav-search" type="text" value=" Search GitHub"></div>
+                    <div><a href="#" class="nav-signin">Sign in</a></div>
+                    <div><button id="nav-signup">
+                        Sign up
+                    </button></div>
+                </div>
+            </div>
+            <div class="main">
+                <div id="main-left">
+                    <div id="main-left-boldtext">Built for <br>developers</div>
+                    <div id="main-left-text">
+                        GitHub is a development platform inspiredd by the way you work. From <span class="main-left-bold"> open source </span> to <span class="main-left-bold"> business </span> , you can host and review code, manage projects, and build software alongside 50 million developers.
+                    </div>
+                </div>
+                <div id="main-right">
+                    <div id="main-right-info">
+                        <div id="main-right-info-content">
+                            <p class="main-right-label">Username</p>
+                            <input class="main-right-input" type="text" placeholder="Username">
+                            <p class="main-right-label">Email</p>
+                            <input class="main-right-input" type="text" placeholder="Email">
+                            <p class="main-right-label">Password</p>
+                            <input class="main-right-input" type="text" placeholder="Password">
+                            <div><span class="main-right-msg">
+                                Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter. <span class="blue">Learn more. </span>
+                            </span></div>
+                            <div id="signup-box">
+                                <p id="greenboxtext">Sign up for Github</p>
+                            </div>
+                            <p class="alarm">By clicking "Sign up for GitHub", you agree to our <span class="blue"> Terms of Service  </span> and <span class="blue">Privacy Statement.</span>  We'll occasionally send you account related emails.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-img"></div>
+        </div>
+    </div>
+</body>
+</html>
