@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Pirogramming</a>
+            <a class="navbar-brand" href="#nav-Header">Pirogramming</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,16 +24,16 @@
                         <a class="nav-link active" aria-current="page" href="#" style="color: blue;">Noh-Youngjin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Intro</a>
+                        <a class="nav-link" href="#nav-Intro">Intro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Highlights</a>
+                        <a class="nav-link" href="#nav-Highlights">Highlights</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallary</a>
+                        <a class="nav-link" href="#nav-Gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -46,18 +46,25 @@
         </div>
     </nav>
     <section id="main">
-        <div id="header-content" class="d-flex flex-column vh-100 justify-content-center align-items-center">
+        <div id="nav-Header" class="d-flex flex-column vh-100 justify-content-center align-items-center">
             <h1 class="mb-2">Pirogramming19</h1>
             <h5 class="mb-4">Cheer up</h5>
             <div style="width: 80vw; border-bottom: 1.5px lightgray solid"></div>
-            <button type="button" class="btn btn-primary mt-3">Get Started!</button>
+            <a href="#nav-Intro"><button type="button" class="btn btn-primary mt-3">Get Started!</button></a>
         </div>
-        <div id="intro-content" class="d-flex vh-100 justify-content-center align-items-center">
+        <div id="nav-Intro" class="d-flex flex-column vh-100 justify-content-center align-items-center bg-secondary">
+            <div id="nav-Intro" class="d-flex flex-column vh-100 justify-content-center align-items-center bg-secondary" style="width: 40rem;">
+                <h1 class="text-danger">Built On the Bootstrap Grid</h1>
+                <h5 class="mb-4 text-white">Bootstrap's responsive grid comes in 4sizes or 'breakpoints': tiny(xs), small(sm), medium(md) and large(lg). These 4 grid cites enables you creat responsive layouts that behave accordingly on different sizes</h5>
+                <a href="#nav-Highlights"><button type="button" class="btn btn-light mt-3">Learn more</button></a>
+            </div>
         </div>
-        <div id="highlights-content" class="d-flex vh-100 justify-content-center align-items-center"></div>
-        <div id="gallery-content" class="d-flex vh-100 justify-content-center align-items-center"></div>
-        <div id="contact-content" class="d-flex vh-100 justify-content-center align-items-center"></div>
+        <div id="nav-Highlights" class="d-flex vh-100 justify-content-center align-items-center bg-secondary"></div>
+        <div id="nav-gallery" class="d-flex vh-100 justify-content-center align-items-center bg-secondary"></div>
+        <div id="nav-contact" class="d-flex vh-100 justify-content-center align-items-center bg-secondary"></div>
+        <footer></footer>
     </section>
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
