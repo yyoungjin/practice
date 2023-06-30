@@ -1,0 +1,1 @@
+print(year, month, day, sep:"T", end="")
